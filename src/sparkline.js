@@ -1,3 +1,5 @@
+export default sparkline;
+
 function getY(max, height, diff, value) {
   return parseFloat((height - (value * height / max) + diff).toFixed(2));
 }
@@ -209,4 +211,3 @@ export function sparkline(svg, entries, options) {
   });
 }
 
-export default sparkline;
